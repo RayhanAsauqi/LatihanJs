@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+  font: 1em sans-serif;
+  width: 200px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+p * {
+  display: block;
+}
+
+input[type="email"] {
+  appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form novalidate>
+      <p>
+        <label for="mail">
+          <span>Please enter an email address:</span>
+          <input type="email" id="mail" name="mail" required minlength="8" />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <button>Submit</button>
+    </form>
+    <script src="script2.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="counter">0</h1>
+    <input type="number" id="inputAngka" />
+    <button class="tambah">Tambah</button>
+    <button class="kurang">Kurang</button>
+    <button class="hps">hapus</button>
+    
+    <script>
+      const counter = document.getElementById("counter");
+      const inputAngka = document.getElementById("inputAngka");
+      const tambah = document.querySelector(".tambah");
+      const kurang = document.querySelector(".kurang");
+      const hps = document.querySelector(".hps");
+
+      tambah.addEventListener("click", () => {
+        counter.innerHTML = parseInt(counter.innerHTML) + +inputAngka.value;
+      });
+      kurang.addEventListener("click", () => {
+        counter.innerHTML = parseInt(counter.innerHTML) - +inputAngka.value;
+      });
+      hps.addEventListener("click", () =>{
+        counter.remove()
+      })
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+  [
+      {
+        "nama": "Rayhan Alsauqi",
+        "nrp": "12345678",
+       "email": "reyhanalsauqi12@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+      },
+      {
+        "nama": "Balqis",
+        "nrp": "7654322",
+        "email": "balqis@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2
+      },
+      {
+        "nama": "zidan",
+        "nrp": "7567575756",
+        "email": "zidan@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 3
+      }
+    ]
